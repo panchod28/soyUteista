@@ -1,0 +1,73 @@
+:root {
+  --main-uts: rgba(202, 210, 37, 1);
+  --secondary-uts: rgba(129, 130, 132, 1);
+  --thirdly-uts: rgba(95, 11, 15, 1);
+  --fourthly-uts: rgba(11, 74, 117, 1);
+}
+
+.app {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/main_background.jpg);
+  height: 100vh;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.icons {
+  width: 6rem;
+  transition: 0.5s ease-in-out;
+}
+
+.icons:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  border-radius: 1rem;
+}
+
+.icon-prestamo {
+  background-color: var(--main-uts);
+}
+
+.icon-notification {
+  background-color: var(--secondary-uts);
+}
+
+.icon-carnet {
+  background-color: var(--thirdly-uts);
+}
+
+.icon-revista {
+  background-color: var(--fourthly-uts);
+}
+
+ion-icon {
+  font-size: 64px;
+  color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  .icons-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .icons-container > h4 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .icons-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
